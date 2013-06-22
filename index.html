@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tiyoo First</title>
+
+</head>
+
+<body>
+<p>Welcome to Tiyoo Media.  This is our first custom mobile application.</p>
+<button id="button">Sign Up</button>
+<button id="clear">Clear</button>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="results"></div>
+<script src="js/zepto.min.js"></script>
+<script src="js/button.js"></script>
+<script>
+$('#button').click(function() {
+	BUTTON.SignUp($('#results'));
+});
+$('#clear').click(function() {
+	$('#results').html('');
+});
+</script>
+</body>
+</html>
